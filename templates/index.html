@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LANBook</title>
+</head>
+<body>
+<h1>List of Notes</h1>
+<ul>
+{% for note in note_list %}
+    <li>
+        <ul>
+    <li>Title: {{ note[1] }}</li>
+    <li>Text: {{ note[2] }}</li>
+        </ul>
+    </li>
+{% endfor %}
+</ul>
+</body>
+</html>
